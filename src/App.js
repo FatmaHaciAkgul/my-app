@@ -3,7 +3,7 @@ class App01 extends Component {
   render() {
     return ( 
       <h1>
-        Merhaba React!
+        Merhaba React dümyası!
       </h1>
     );
   }
