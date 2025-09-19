@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+class App01 extends Component {
+  render() {
+    return ( 
+      <h1>
+        Merhaba React!
+      </h1>
+    );
+  }
 }
 
-export default App;
+class App02 extends Component {
+  render() {
+    return ( 
+      <h1>
+        Merhaba React 2!
+      </h1>
+    );
+  }
+}
+
+class App03 extends Component {
+  render() { return (
+  <div className="test">
+    <App02 />
+    <App01 />
+  </div>
+  );
+  }
+}
+
+function MerhabaFunc(props) {
+return <h1>Merhaba, {props.name + " " + props.surname}</h1>;
+}
+
+const element = <MerhabaFunc name="Erdinç" surname="AHA" />;
+
+class App04 extends Component {
+render() { return (
+element
+);
+}
+}
+ 
+export {App01, App02, App03, App04}
+export default App03;
+
+
+
