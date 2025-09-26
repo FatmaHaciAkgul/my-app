@@ -14,7 +14,7 @@ class App02 extends Component {
   render() {
     return ( 
       <h1>
-        Merhaba React 2!
+        Merhaba React 21!
       </h1>
     );
   }
