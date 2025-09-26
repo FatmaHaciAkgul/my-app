@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 class App01 extends Component {
   render() {
     return ( 
@@ -42,8 +43,32 @@ element
 }
 }
  
-export {App01, App02, App03, App04}
-export default App03;
+class App05 extends Component {
+  render() { return (
+    <h1 style={{
+      backgroundColor: this.props.renk ? 'red' : 'white',
+      fontSize: this.props.boyut + 'px'
+    }}>Merhaba2, {this.props.ad} {this.props.soyad}</h1>
+  );
+  }
+}
+
+App05.propTypes = { 
+  ad: propTypes.string.isRequired,
+  soyad: propTypes.string,
+  renk: propTypes.bool,
+  boyut: propTypes.number
+};
+
+App05.defaultProps = { 
+  ad: "Erdinç",
+  soyad: "Uzun",
+  renk: true,
+  boyut: 20
+};
+
+export {App01, App02, App03, App04, App05}
+export default App05;
 
 
 
