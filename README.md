@@ -1,3 +1,17 @@
+# Bilgisayara ilk kurulumda
+
+Gitlab (Program - yüklenecek)
+
+Nodejs (Program - yüklenecek)
+
+Set -ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned (Komut - Terminalde çalıştırılacak)
+
+cd my-app (Komut - Terminalde çalıştırılacak)
+
+npm install (Komut - Terminalde çalıştırılacak)
+
+npm start (Komut - Terminalde çalıştırılacak)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
